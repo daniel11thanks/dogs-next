@@ -41,7 +41,12 @@ export default function LoginForm() {
         <ErrorMessage error={state.error} />
         <FormButton />
       </form>
-      <Link href="/login/perdeu">Perdeu a senha?</Link>
+      <Link
+        style={{ marginTop: '0.5rem', display: 'inline-block' }}
+        href="/login/perdeu"
+      >
+        Perdeu a senha?
+      </Link>
     </>
   );
 }
