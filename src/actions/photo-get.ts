@@ -4,7 +4,7 @@ import { PHOTO_GET } from '@/functions/api';
 import apiError from '@/functions/api-error';
 import { Photo } from './photos-get';
 
-export type PhotosComment = {
+export type Comment = {
   comment_ID: string;
   comment_post_ID: string;
   comment_author: string;
@@ -13,7 +13,7 @@ export type PhotosComment = {
 
 export type PhotoData = {
   photo: Photo;
-  comments: PhotosComment[];
+  comments: Comment[];
 };
 
 export default async function photoGet(id: string) {

@@ -7,7 +7,6 @@ import ErrorMessage from '../helper/error-message';
 import React from 'react';
 import styles from './conta-photo-post.module.css';
 import photoPost from '@/actions/photo-post';
-import { Comment } from '@/actions/photo-get';
 
 function FormButton() {
   const { pending } = useFormStatus();
